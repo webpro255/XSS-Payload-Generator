@@ -120,7 +120,8 @@ Try Live Demo of the XSS Payload Generator here: https://webpro255.github.io/XSS
 
 
 ## Contributing
-**Contributions are welcome! To contribute**:
+**Contributions are welcome! 
+To contribute**:
 1. Fork the repository.
 2. Create a feature branch.
 3. Submit a pull request with detailed descriptions of your changes.
