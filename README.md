@@ -111,7 +111,7 @@ Try Live Demo of the XSS Payload Generator here: https://webpro255.github.io/XSS
 --- 
 
 ## Roadmap
- - Future enhancements for this project include:
+**Future enhancements for this project include**:
  - Adding predefined XSS payload templates.
  - Supporting multi-step obfuscation techniques.
  - Allowing users to save and export payloads.
