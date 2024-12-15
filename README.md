@@ -1,4 +1,5 @@
 # XSS Payload Generator
+![XSS Payload Generator Interface](screenshots/csx2.gif)
 A powerful, customizable XSS Payload Generator designed to help ethical hackers, penetration testers, and cybersecurity enthusiasts understand Cross-Site Scripting (XSS) vulnerabilities and test Web Application Firewalls (WAFs). This tool is ideal for learning, demonstrating attack scenarios, and creating advanced XSS payloads for testing in secure environments.
 
 ## Features
