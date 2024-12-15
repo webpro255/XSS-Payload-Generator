@@ -1,1 +1,42 @@
 
+#### 2. **`index.html`**
+The basic HTML structure for the interface.
+
+Example:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XSS Payload Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>XSS Payload Generator</h1>
+    <div>
+        <label for="tag">Select Tag:</label>
+        <select id="tag">
+            <option value="img">img</option>
+            <option value="svg">svg</option>
+            <option value="script">script</option>
+        </select>
+    </div>
+    <div>
+        <label for="event">Select Event Handler:</label>
+        <select id="event">
+            <option value="onerror">onerror</option>
+            <option value="onload">onload</option>
+        </select>
+    </div>
+    <div>
+        <label for="payload">Custom Payload:</label>
+        <input type="text" id="payload" placeholder="alert(1)">
+    </div>
+    <button onclick="generatePayload()">Generate Payload</button>
+    <h2>Generated Payload:</h2>
+    <textarea id="output" readonly></textarea>
+    <script src="script.js"></script>
+</body>
+</html>
+
