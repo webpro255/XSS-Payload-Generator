@@ -3,40 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XSS Payload Generator</title>
+    <title>Advanced XSS Payload Generator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>XSS Payload Generator</h1>
-        <p>Generate customizable XSS payloads for ethical hacking and WAF testing.</p>
-        <div class="form-group">
-            <label for="tag">Select Tag:</label>
-            <select id="tag">
-                <option value="img">img</option>
-                <option value="svg">svg</option>
-                <option value="script">script</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="event">Select Event Handler:</label>
-            <select id="event">
-                <option value="onerror">onerror</option>
-                <option value="onload">onload</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="payload">Custom Payload:</label>
-            <input type="text" id="payload" placeholder="alert('XSS')">
-        </div>
-        <button onclick="generatePayload()">Generate Payload</button>
-        <div class="output">
-            <h2>Generated Payload:</h2>
-            <textarea id="output" readonly></textarea>
-        </div>
+        <!-- Header -->
+        <header>
+            <h1>Advanced XSS Payload Generator</h1>
+            <p>Create and customize XSS payloads for ethical hacking, WAF testing, and learning purposes.</p>
+        </header>
+
+        <!-- Payload Options -->
+        <section class="payload-options">
+            <h2>Payload Options</h2>
+            <form id="payloadForm">
+                <!-- Tag Selection -->
+                <div class="form-group">
+                    <label for="tag">Select HTML Tag:</label>
+                    <select id="tag">
+                        <option value="img">img</option>
+                        <option value="svg">svg</option>
+                        <option value="script">script</option>
+                        <option value="iframe">iframe</option>
+                        <option value="a">a (anchor)</option>
+                        <option value="div">div</option>
+                    </select>
+                </div>
+
+                <!-- Event Handler Selection -->
+                <div class="form-group">
+                    <label for="event">Select Event Handler:</label>
+                    <select id="event">
+                        <option value="onerror">onerror</option>
+                        <option value="onload">onload</option>
+                        <option value="onclick">onclick</option>
+                        <option value="onmouseover">onmouseover</option>
+                        <option value="onfocus">onfocus</option>
+                    </select>
+                </div>
+
+                <!-- Custom Payload Input -->
+                <div class="form-group">
+                    <label for="payload">Enter JavaScript Payload:</label>
+                    <input type="text" id="payload" placeholder="alert('XSS')">
+                </div>
+
+                <!-- Encoding Options -->
+                <div class="form-group">
+                    <label for="encoding">Select Encoding Method:</label>
+                    <select id="encoding">
+                        <option value="none">None</option>
+                        <option value="url">URL Encoding</option>
+                        <option value="base64">Base64 Encoding</option>
+                        <option value="hex">Hexadecimal Encoding</option>
+                    </select>
+                </div>
+
+                <!-- Obfuscation Option -->
+                <div class="form-group">
+                    <label for="obfuscation">Obfuscation:</label>
+                    <input type="checkbox" id="obfuscation"> Enable Obfuscation
+                </div>
+
+                <!-- Submit Button -->
+                <button type="button" id="generateButton" onclick="generatePayload()">Generate Payload</button>
+            </form>
+        </section>
+
+        <!-- Output Section -->
+        <section class="output-section">
+            <h2>Generated Payload</h2>
+            <textarea id="output" readonly placeholder="Your payload will appear here..."></textarea>
+        </section>
+
+        <!-- Instructions -->
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <p>
+                Use the dropdown menus and input fields to customize your payload. Click "Generate Payload" to see the results.
+                The tool supports various encoding and obfuscation techniques to test advanced WAF rules.
+            </p>
+        </section>
     </div>
+
+    <!-- Footer -->
     <footer>
-        <p>Created by <a href="https://github.com/webpro255">webpro255</a></p>
+        <p>Created by <a href="https://github.com/webpro255" target="_blank">webpro255</a></p>
     </footer>
     <script src="script.js"></script>
 </body>
