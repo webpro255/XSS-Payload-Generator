@@ -1,95 +1,124 @@
 /* General Reset */
-body {
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f8fb;
-    color: #333;
+    box-sizing: border-box;
 }
 
-/* Center Content */
-.container {
-    max-width: 600px;
-    margin: 50px auto;
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f8fd;
+    color: #333;
+    line-height: 1.6;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    width: 100%;
+    max-width: 800px;
     background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
     text-align: center;
 }
 
-/* Styling Headings */
-h1 {
+/* Header Styling */
+header h1 {
     color: #0078d7;
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 10px;
 }
 
-p {
+header p {
     color: #555;
     margin-bottom: 20px;
 }
 
+/* Section Titles */
+h2 {
+    color: #0078d7;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    text-align: left;
+}
+
 /* Form Group Styling */
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-align: left;
 }
 
 label {
     display: block;
     font-weight: bold;
-    margin-bottom: 5px;
     color: #333;
+    margin-bottom: 5px;
 }
 
 input, select {
     width: 100%;
     padding: 10px;
+    font-size: 1em;
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 1em;
-    box-sizing: border-box;
+    margin-top: 5px;
 }
 
+/* Button Styling */
 button {
     background: #0078d7;
-    color: #fff;
-    padding: 10px 20px;
+    color: white;
     border: none;
     border-radius: 5px;
+    padding: 12px 20px;
     font-size: 1em;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 15px;
 }
 
 button:hover {
     background: #005bb5;
 }
 
-/* Output Box Styling */
-.output {
-    margin-top: 20px;
+/* Output Textarea */
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+    margin-top: 10px;
+}
+
+/* Instructions Section */
+.instructions {
+    margin-top: 30px;
     text-align: left;
 }
 
-textarea {
-    width: 100%;
-    height: 100px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1em;
-    box-sizing: border-box;
-    resize: none;
+.instructions p {
+    color: #666;
+    font-size: 0.9em;
+    line-height: 1.4;
 }
 
 /* Footer Styling */
 footer {
+    margin-top: 30px;
     text-align: center;
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: #777;
+    font-size: 0.85em;
+    color: #888;
 }
 
 footer a {
@@ -99,4 +128,24 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px 20px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
 }
