@@ -4,22 +4,22 @@ A powerful, customizable XSS Payload Generator designed to help ethical hackers,
 ## Features
 Dynamic Payload Generation
  - Choose from a variety of HTML tags, including:
-   - <img>
-   - <svg>
-   - <script>
-   - <iframe>
-   - <a>
-   - <div>
+   - `<img>`
+   - `<svg>`
+   - `<script>`
+   - `<iframe>`
+   - `<a>`
+   - `<div>`
 
  - Select common event handlers, such as:
-   - onerror
-   - onload
-   - onclick
-   - onmouseover
-   - onfocus
+   - `onerror`
+   - `onload`
+   - `onclick`
+   - `onmouseover`
+   - `onfocus`
 
 ## Advanced Encoding and Obfuscation
-Encode payloads to evade detection:
+**Encode payloads to evade detection**:
  - URL Encoding
  - Base64 Encoding
  - Hexadecimal Encoding
@@ -33,51 +33,51 @@ Enable obfuscation to bypass basic security filters by injecting comments and br
 
 ## How It Works
 
-1. Select a Tag:
+1. **Select a Tag**:
  - Choose an HTML tag (e.g., <img> or <svg>) that supports JavaScript event handlers.
 
-2. Choose an Event Handler:
+2. **Choose an Event Handler**:
  - Select an event that triggers JavaScript (e.g., onerror, onload).
 
-3. Enter a JavaScript Payload:
+3. **Enter a JavaScript Payload**:
  - Input the JavaScript code you want to execute (e.g., alert('XSS')).
 
-4. Select Encoding:
+4. **Select Encoding**:
 - Choose an encoding method to obfuscate your payload.
 
-5. Enable Obfuscation (Optional):
+5. **Enable Obfuscation (Optional)**:
  - Add random comments or spaces to further evade detection.
 
-6. Generate Payload:
+6. **Generate Payload**:
  - Click the button to generate the payload, which will be displayed in the output box.
 
 ---
 
 ## Example Payloads
-Basic Payload
-```<img src="x" onerror="alert('XSS')">```
-Obfuscated Payload
-```<svg/onload=prompt`1`>```
-Encoded Payload (Base64)
-```PHN2ZyBvbmxvYWQ9YWxlcnQoJ1hTUycpPg==```
+**Basic Payload**
+`<img src="x" onerror="alert('XSS')">`
+**Obfuscated Payload**
+`<svg/onload=prompt`1`>`
+**Encoded Payload (Base64)**
+`PHN2ZyBvbmxvYWQ9YWxlcnQoJ1hTUycpPg==`
 
 ## Use Cases
-Education
+**Education**
  - Understand how XSS vulnerabilities work.
  - Learn how attackers bypass basic security filters.
 
-Penetration Testing
+**Penetration Testing**
  - Test web applications for XSS vulnerabilities.
  - Evaluate the effectiveness of WAF configurations.
 
-Demonstrations
+**Demonstrations**
  - Use in presentations to highlight XSS attack scenarios and mitigation strategies.
 
-Live Demo
+**Live Demo**
 Try Live Demo of the XSS Payload Generator here: https://webpro255.github.io/XSS-Payload-Generator/
 
 ## Installation
-Clone this repository:
+**Clone this repository**:
    ```bash
    git clone https://github.com/webpro255/XSS-Payload-Generator.git
    ```
@@ -90,16 +90,16 @@ Clone this repository:
 
 ## Frequently Asked Questions (FAQ)
 
-1. What is XSS?
+1. **What is XSS?**
  - **Cross-Site Scripting (XSS)** is a vulnerability that allows attackers to inject malicious scripts into trusted websites, affecting users who interact with those sites.
 
-2. How can I practice safely?
+2. **How can I practice safely?**
  - Use this tool in isolated environments, such as:
     - Virtual Machines
     - Local Test Servers
     - Penetration Testing Labs like Hack The Box or TryHackMe.
 
-3. How do I protect against XSS?
+3. **How do I protect against XSS?**
  - Sanitize and validate user inputs.
  - Use **Content Security Policy (CSP)** headers.
  - Encode outputs properly.
@@ -116,7 +116,7 @@ Clone this repository:
 
 
 ## Contributing
-Contributions are welcome! To contribute:
+**Contributions are welcome! To contribute**:
 1. Fork the repository.
 2. Create a feature branch.
 3. Submit a pull request with detailed descriptions of your changes.
